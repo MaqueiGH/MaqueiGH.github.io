@@ -578,14 +578,18 @@ nav a:focus{
 .location-image img{
     width: 100%;
     display: inline-block;
+    object-fit: cover;
+    height: 100%;
 }
 .grid-line-up{
+    display: inline-block;
     grid-area: glu;
     border-top: 2px solid #3b3b3b;
 }
 .lg{
     font-family: 'Mukta', sans-serif;
     padding: 5px;
+    border-bottom: none
 }
 .lg-1{
     grid-area: lg1;
