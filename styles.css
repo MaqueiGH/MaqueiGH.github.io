@@ -1,0 +1,747 @@
+@font-face {
+    font-family: 'Couture'; /*a name to be used later*/
+    src: url(fonts/couture-bld.otf); /*URL to font*/
+}
+body{
+    margin: 0;
+    font-family: 'Mukta', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: #365385 ;
+}
+button{
+    cursor: pointer;
+    transition: .3s;
+}
+header{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.274);
+}
+.header-nav{
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.header-nav img{
+    display: inline-block;
+}
+.header-nav h1{
+    font-size: 60px;
+    margin: 0;
+    color: rgb(66, 135, 199);
+}
+.nav-button{
+    display: flex;
+    transition: .3s;
+    background-color: transparent;
+    border: 0;
+    font-size: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.nav-button:hover,
+.nav-button:focus{
+    color: rgb(101, 144, 194);
+    transform: rotate(90deg);
+}
+.links{
+    width: 90%;
+    margin: 0 auto;
+    list-style: none;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in;
+}
+.links a{
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.links a:hover,
+.links a:focus{
+    color: black;
+}
+.show-links {
+    height: 15rem;
+}
+.section-one{
+    background-image: url(imgs/ezgif-2-2a3281e355.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.274);
+    height: 86vh;
+    max-height: 1000px;
+    display: flex;
+}
+.div-one-flex{
+    padding:50px 0;
+    display: flex;
+    width: 80%;
+    max-width: 1060px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.div-two-card-two,
+.div-two-card-three,
+.div-two-card-four{
+    display: none;
+}
+.div-one-img{
+    width: 30%;
+}
+.div-one-text{
+    width: 70%;
+}
+.div-one-img img{
+    width: 100%;
+    min-width: 230px;
+    height: 100%;
+}
+.div-one-text h2{
+    font-size: 3.5rem;
+    line-height: 3rem;
+    margin-bottom: 30px;
+    color: rgb(26, 26, 26);
+}
+.div-one-text p{
+    margin: 0.5rem 0;
+    font-size: 1.8rem;
+    color: white;
+    font-weight: bold;
+}
+.alto-button a{
+    display: inline-block;
+    padding: 0 20px;
+    background-color: rgb(66, 135, 199);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.651);
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: .2s;
+}
+.alto-button a:focus,
+.alto-button a:hover{
+    background-color: rgb(50, 99, 145);
+}
+.section-two{
+    padding: 30px 0;
+    background: linear-gradient(rgb(121, 159, 196, .92), rgb(66, 135, 199,.92)), url(https://newyorkrentalbyowner.com/blog/wp-content/uploads/2019/09/Skiing-in-Upstate-New-York-10-Best-Ski-Resorts-For-Your-Winter-Vacation.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+.section-two h2{
+    text-align: center;
+    font-size: 3rem;
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+}
+.div-two-flex{
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.div-two-cards{
+    width: 100%;
+    text-align: center;
+}
+.div-two-cards img{
+    height: 4rem;
+    max-width: 140px;
+}
+.div-two-cards h3{
+    color: white;
+    margin: 0px;
+    font-size: 2rem;
+}
+.underline{
+    height: 4px;
+    background-color: rgb(158, 204, 247);
+    width: 30%;
+    max-width: 208px;
+    margin: 0 auto;
+}
+.div-two-cards p{
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 20px auto;
+    max-width: 693px;
+}
+.div-two-cards img{
+    filter: invert();
+}
+.page-dots{
+    display: flex;
+    width: 30%;
+    max-width: 210px;
+    margin: 0 auto;
+    padding-top: 30px;
+    justify-content: space-around;
+    color: white;
+}
+.dot-one, .dot-two, .dot-three, .dot-four{
+    transition: .3s;
+    padding: 20px;
+}
+.dot-one:hover,.dot-two:hover,.dot-three:hover, .dot-four:hover,
+.dot-one:focus,.dot-two:focus,.dot-three:focus, .dot-four:focus{
+    color: rgb(122, 122, 122);
+}
+.section-three{
+    background-color: white;
+    box-shadow: 0 5px 15px 5px rgba(0, 0, 0, 0.274);
+}
+.div-three-flex{
+    width: 80%;
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+}
+.div-three-flex h2{
+    font-size: 3rem;
+    margin: 0;
+}
+.div-three-flex p{
+    font-size: 1.5rem;
+}
+.learn-more{
+    text-decoration: none;
+    color: rgb(46, 93, 196);
+}
+.learn-more:hover,
+.learn-more:focus{
+    text-decoration: underline;
+}
+.div-three-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.div-three-links a{
+    color: white;
+
+}
+.div-three-links p{
+    margin: 0 0 15px 0;
+
+}
+.div-three-image img{
+    width: 100%;
+}
+.section-four{
+    margin: 50px 0;
+    background-image: url(imgs/coronet-peak-pano-large.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed ;
+    box-shadow: 0 5px 15px 5px rgba(0, 0, 0, 0.274);
+}
+.div-four-flex{
+    padding: 50px 0;
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1060px;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+}
+.learn-more-plus{
+    text-decoration: none;
+    color: rgb(197, 215, 255);
+}
+.learn-more-plus:hover,
+.learn-more-plus:focus{
+    text-decoration: underline;
+}
+
+/* .div-four-right{
+    width: 50%;
+}
+.div-four-left{
+    width: 50%;
+} */
+.div-four-left img{
+    display: none;
+}
+.div-four-flex p{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.div-four-flex h2{
+    font-size: 3rem;
+    margin: 0;
+    text-align: right;
+}
+.section-five{
+    padding: 0 0 50px 0;
+    background: linear-gradient(rgba(47, 101, 201, 0.308), rgba(123, 145, 154, 0.77)), url(https://images.unsplash.com/photo-1560710990-9f5d4197b5a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bW91bnRhaW4lMjBzbm93fGVufDB8fDB8fA%3D%3D&w=1000&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section-five h2{
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
+.div-five-flex{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.div-five-box{
+    background-color: white;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+.div-five-image{
+    height: 200px;
+    width: 50%;
+}
+.div-five-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.div-five-one-image{
+    background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/f6/84/a8/nevesole-folgarida-resort.jpg?w=900&h=600&s=1);
+    background-size: cover;
+}
+.div-five-two-image{
+    background-image: url(https://www.alpecimbra.it/images/content/99383_12048_3_C_2500_1406_0_4696584/2-win-neve-salizzona-2020-gober-1-copia.jpg);
+    background-size: cover;
+}
+.div-five-three-image{
+    background-image: url(https://www.skiperformance.com/images/Pejo_funivie.jpg);
+    background-size: cover;
+}    
+.div-five-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    background-color: white;
+    text-align: center;
+}
+.div-five-info h3{
+    margin: 0;
+    font-size: 3rem;
+    font-family: couture;
+    color: #7b919a;
+}
+.div-five-info h4{
+    margin: 0;
+    font-size: 2rem;
+    font-family: couture;
+    letter-spacing: 1rem;
+    color: #3b3b3b;
+}
+.div-five-button{
+    background-color: rgb(66, 135, 199);
+    border: 0;
+    font-size: 2rem;
+    font-family: couture;
+    padding: 10px;
+    color: white;
+    width: 90%;
+    margin: 0 auto;
+}
+.div-show-all{
+    width: 80%;
+    margin: 0 auto;
+}
+.div-show-line{
+    margin: 0 auto;
+    height: 5px;
+    width: 40%;
+    background-color: white;
+}
+.section-five p{
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+    font-family:couture;
+    font-size: 2rem;
+}
+.section-six{
+    background-color: white;
+    box-shadow: 0 5px 50px 5px rgba(0, 0, 0, 0.274);
+}
+.section-six h2{
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+    padding: 30px 0 0 0;
+}
+.div-six-flex{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+.div-six-partner-three{
+    margin-top: 60px;
+}
+.div-six-partner h3{
+    font-size: 1.5rem;
+    margin: 0;
+    margin-top: 10px;
+    color: black;
+}
+.div-six-partner{
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.div-six-partner-info{
+    height: 150px;
+}
+.div-six-partner p{
+    font-size: 1.3rem;
+    margin: 0;
+    color: #3b3b3b;
+}
+.div-six-partner a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(61, 120, 168);
+}
+.div-six-partner a:hover,
+.div-six-partner a:focus{
+    text-decoration: underline;
+}
+.div-seven-flex{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 0;
+    text-align: center;
+}
+.div-seven-left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.div-seven-left a{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    padding-bottom: 5px;
+}
+.div-seven-social{
+    margin-top: 15px;
+}
+.div-seven-left i{
+    font-size: 3rem;
+    color: white;
+    padding-right: 5px;
+}
+.div-seven-right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    margin-top: 40px;
+}
+.div-seven-right p{
+    font-size: 2rem;
+    margin: 0;
+    color: white;
+    margin-top: 5px;
+}
+.div-seven-apps{
+    display: flex;
+    justify-content: center;
+}
+.div-seven-apps img{
+    width: 70%;
+}
+@media (min-width:985px) { /* PC */
+    .div-one-text p{
+        color: white;
+    }
+    .header-all{
+        width: 90%;
+         max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+    .nav-button{
+        display: none;
+    }
+    .links {
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    }
+    .links a {
+    font-size: 1.5rem;
+    }
+    .header-nav{
+      padding: 0;
+    }
+    .header-nav h1{
+      font-size: 60px;
+    }
+    .div-two-flex{
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 1120px;
+        padding: 30px;
+        display: grid;
+        grid-gap: 10px;
+        justify-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "a b"
+        "c d";
+    }
+    .div-two-cards h3{
+        margin: 0px 0 0 0;
+        font-size: 1.75rem;
+        color: rgb(56, 56, 56);
+    }
+    .div-two-cards p{
+        font-weight: 200;
+        line-height: 1.5rem;
+        font-size: 1.25rem;
+        margin: 20px auto;
+        max-width: 693px;
+        color: white;
+    }
+    .div-two-card-one{
+        grid-area: a;
+    }
+    .div-two-card-two{
+        grid-area: b;
+    }
+    .div-two-card-three{
+        grid-area: c;
+    }
+    .div-two-card-four{
+        grid-area: d;
+    }
+
+    .div-two-card-one,
+    .div-two-card-two,
+    .div-two-card-three,
+    .div-two-card-four{
+        display: inline-block;
+        width: 90%;
+        height: 87%;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.274);
+        padding: 10px 20px;
+    }
+    .page-dots{
+        display: none;
+    }
+    .div-three-flex{
+        display: flex;
+        justify-content: space-around;
+        max-width: 1560px;
+        align-items: center;
+        text-align: left;
+    }
+    .div-three-image img{
+        height: 100%;
+        width: 100%;
+        min-height: 410px;
+        object-fit: cover;
+    }
+    .div-three-right{
+        width: 50%;
+    }
+    .div-three-left{
+        width: 40%;
+    }
+    .div-three-links{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .div-four-flex{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 0;
+        min-height: 400px;
+    }
+    .div-four-left{
+        width: 30%;
+    }
+    .div-four-right{
+        width: 65%;
+    }
+    .div-four-left img{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: invert();
+    }
+    .div-five-image{
+        height: 75.5%;
+        width: 100%;
+        transition: .5s;
+    }
+    .div-five-one-image{
+        background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/f6/84/a8/nevesole-folgarida-resort.jpg?w=900&h=600&s=1);
+        background-size: cover;
+    }
+    .div-five-one-image:hover{
+        background-image: url(https://www.alpineanswers.co.uk/media/W1siZiIsIjIwMTMvMDgvMTQvMTNfMTVfNDRfNzI3X0ZvbGdhcmlkYTguanBnIl0sWyJwIiwidGh1bWIiLCIxMjAweDgwMCIsIi1xdWFsaXR5IDgwIl1d/672c6207bd30e665/Folgarida8.jpg);
+        background-size: cover;
+    }
+    .div-five-two-image{
+        background-image: url(https://www.alpecimbra.it/images/content/99363_12048_3_C_2500_1406_0_4105032/scopri-l-alpe-cimbra.jpg);
+        background-size: cover;
+    }
+    .div-five-two-image:hover{
+        background-image: url(https://sdds4.intermaps.com/mcms4/imgupload/2021_03_05_16_03_04_649_0.jpg);
+    }
+    .div-five-three-image{
+        background-image: url(https://cf.bstatic.com/xdata/images/hotel/max1280x900/307624608.jpg?k=ad93ad12ca7994808437c4d283d7be740c3a6be68a822b5a2172db069f89dbe8&o=&hp=1);
+        background-size: cover;
+    }
+    .div-five-three-image:hover{
+        background-image: url(https://www.skiresort.info/typo3temp/_processed_/2e/e5/59/93/c28e9a21a6.jpg);
+        background-size: cover;
+    }
+    .div-five-flex{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        max-width: 950px;
+        background-color: transparent;
+    }
+    .div-five-box{
+        flex-direction: column;
+        width: 35%;
+        height:  520px;
+        justify-content: space-between;
+        background-color: transparent;
+    }
+    .div-five-info{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 20%;
+        background-color: white;
+        padding: 10px 0;
+    }
+    .div-five-info h3{
+        font-size: 2rem;
+    }
+    .div-five-info h4{
+        font-size: 1rem;
+        letter-spacing: 0.5rem;
+    }
+    .div-five-button{
+        font-size: 1.2rem;
+        width: 50%;
+        padding: 5px 0px;
+        margin: 10px 0;
+    }
+    .div-five-button:hover,
+    .div-five-button:focus{
+        background-color: #6C8290;
+    }
+    .div-show-line{
+        margin: 0 auto;
+        height: 5px;
+        width: 20%;
+        background-color: white;
+    }
+    .div-six-flex{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 50px 0;
+        max-width: 1522px;
+    }
+    .div-six-partner{
+        width: 30%;
+    }
+    .div-six-partner img{
+        width: 50%;
+        height: 100px;
+        object-fit: contain;
+    }
+    .section-seven{
+        background: linear-gradient(rgba(136, 171, 206, 0.767), rgba(39, 63, 87, 0.767)), url(https://cdn.wallpapersafari.com/39/43/vn2lRD.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .div-seven-flex{
+        display: flex;
+        width: 70%;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        padding: 120px 0;
+        flex-direction: row;
+        text-align: left;
+    }
+    .div-seven-left{
+        display: flex;
+        flex-direction: column;
+    }
+    .div-seven-left a{
+        color: white;
+        text-decoration: none;
+        font-size: 1.1rem;
+        padding-bottom: 5px;
+    }
+    .div-seven-left a:hover,
+    .div-seven-left a:focus{
+        text-decoration: underline;
+    }
+    .div-seven-social{
+        margin-top: 15px;
+    }
+    .div-seven-left i{
+        font-size: 1.5rem;
+        color: white;
+        padding-right: 5px;
+    }
+    .div-seven-right{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        align-items: flex-end;
+        margin-top: 0px
+    }
+    .div-seven-right p{
+        font-size: 1.1rem;
+        margin: 0;
+        color: white;
+    }
+    .div-seven-apps{
+        display: flex;
+        justify-content: right;
+    }
+    .div-seven-apps img{
+        width: 70%;
+
+    }
+}
