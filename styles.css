@@ -32,7 +32,6 @@ body{
 .left-div-image img{
     width: 60%;
 }
-.title{}
 .title h1{
     margin: 0;
     text-align: center;
@@ -99,70 +98,65 @@ body{
     color: #4a90e2;
     cursor: pointer;
 }
-@media (max-width:1300px) {
+@media (max-width:1281px) {
+    .title h1{
+        margin: 0;
+        text-align: center;
+        font-size: 2.3rem;
+    }
+}
+@media(max-width:1025px) {
     .right-section{
         display: none;
     }
     .left-section{
-        width: 100%;
+        width: 80%;
+        margin: 0 auto;
     }
     .left-div{
-        width: 80%;
-    }
-    .left-div-image img{
-        width: 50%;
+        height: 70%;
     }
     .title h1{
-        font-size: 5rem;
+        margin: 0;
+        text-align: center;
+        font-size: 4.8rem;
     }
-    .log-in-buttons{
-        height: 30%;
-    }
-    .boxes{
-        font-size: 2rem;
-        height: 7rem;
-    }
-}
-@media(max-width:800px) {
-    .log-in-buttons{
-        height: 10rem;
-    }
-    .boxes{
-        height: 5rem;
-    }
-    .title h1{
-        font-size: 3.5rem;
-    }
-}
-@media (max-width:400px) {
-    .log-in-buttons{
-        height: 10rem;
-    }
-    .title h1{
-        font-size: 1rem;
-    }
-    .boxes{
-        font-size: 1rem;
-        height: 2rem;
-        
-    }
-    .log-in-buttons{
-        height: 10%;
-    }
-}
-@media (max-width:300px) {
     .log-in-buttons{
         height: 15rem;
     }
-    .title h1{
-        font-size: 1rem;
+    .boxes{ 
+        height: 4rem;
+        font-size: 2.5rem;
     }
-    .boxes{
-        font-size: .5rem;
-        height: 2rem;
-        
+}
+@media(max-width:801px) {
+    .title h1{
+        margin: 0;
+        text-align: center;
+        font-size: 3.5rem;
     }
     .log-in-buttons{
-        height: 30%;
+        height: 12rem;
     }
+    .boxes{ 
+        height: 3.5rem;
+        font-size: 2rem;
+    }
+}
+@media(max-width:600px) {
+    .title h1{
+        margin: 0;
+        text-align: center;
+        font-size: 2.7rem;
+    }
+    .log-in-buttons{
+        height: 12rem;
+    }
+    .boxes{ 
+        height: 3.5rem;
+        font-size: 2rem;
+    }
+}
+@media(max-width:480px) {
+
 }
