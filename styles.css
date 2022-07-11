@@ -101,6 +101,7 @@ body{
 }
 .right-div-text{ /* BACK & ABOUT US */
     transition: .3s;
+    display: inline-block;
 }
 .right-div-text:hover,
 .right-div-text:focus{
