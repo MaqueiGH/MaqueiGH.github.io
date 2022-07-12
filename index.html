@@ -5,37 +5,83 @@
     <title>Identification</title>
     <script src="https://kit.fontawesome.com/45868cce58.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Mukta:wght@200;400;700;800&family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Mukta:wght@200;400;700&family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main class="full-screen">
-        <section class="left-section">
-                <div class="left-div">
-                    <div class="left-div-image">
-                        <img src="imgs/image.svg" alt="">
+    <header>
+        <nav>
+            <div class="header-all">
+                <div class="header-nav">
+                    <img src="imgs/image.svg" alt="">
+                    <button class="nav-button">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+                <ul class="links">
+                    <li><a href="">How it works</a></li>
+                    <li><a href="">Plus+</a></li>
+                    <li><a href="">Resorts</a></li>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">Ski hire</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="white-line"></div>
+            <section class="button-section">
+                <div class="button-div">
+                    <div class="operator-image">
+                        <img src="imgs/operator.png" alt="">
                     </div>
-                    <div class="title">
-                        <h1 class="upper-title">Operator</h1>
-                        <h1>Log in</h1>
-                    </div>
-                    <div class="log-in-buttons">
-                        <input class="boxes" type="text" placeholder="Username">
-                        <input class="boxes" type="password" placeholder="Password">
-                        <button class="continue-btn boxes">Continue</button>
+                    <div class="button-text">
+                        <h1>Log in as</h1>
+                        <button class="staff-button">Operator</button>
+                        <button class="staff-button">Manager</button>
+                        <button class="staff-button">Partner</button>
                     </div>
                 </div>
-        </section>
-        <section class="right-section">
-            <div class="right-div">
-                <div class="right-div-top">
-                    <h2 class="right-div-text"><i class="fa-solid fa-caret-left"></i> Back</h2>
-                </div>
-                <div class="right-div-bottom">
-                    <div class="bottom-line"></div>
-                    <p class="right-div-text">About us</p>
+            </section>
+        <div class="white-line white-line-bottom"></div>
+        <section class="about-us-section">
+            <div class="about-us">
+                <div class="about-us-text">
+                <h1>About us</h1>
+                <p>Alto.Ski is a pay as you go ski pass, connected to a smartphone app that allows you to go straight to the ski slopes without having to queue at the ticket office or pay in advance.</p>
+            </div>
+                <div class="about-us-image">
+                    <img src="imgs/881395cc-23b0-46e4-a86a-03ce6d709b3d_alto-ski-cards.png" alt="">
                 </div>
             </div>
         </section>
     </main>
+    <div class="footer-line"></div>
+    <footer>
+        <section class="social-section">
+            <div class="social-div-flex">
+                <div class="social-div-left">
+                    <a href="">Terms & Conditions</a>
+                    <a href="">Privacy policy</a>
+                    <a href="">Cookie policy</a>
+                    <div class="social-div-icons">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+                <div class="social-div-right">
+                    <p>Download our app:</p>
+                    <div class="social-div-apps">
+                        <img src="imgs/download-on-the-app-store.svg" alt="">
+                        <img src="imgs/get-it-on-google-play-badge-logo-8CDE582776-seeklogo.com.png" alt="">
+                    </div>
+                    <p>Copyright &copy; 2022 Alto.ski</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="javascript.js"></script>
 </body>
 </html>

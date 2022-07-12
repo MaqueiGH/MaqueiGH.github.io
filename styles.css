@@ -1,172 +1,311 @@
-@font-face {
-    font-family: 'Couture'; /*a name to be used later*/
-    src: url(fonts/couture-bld.otf); /*URL to font*/
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 body{
     margin: 0;
-    height: 100vh;
-    font-size: 1em;
     font-family: 'Montserrat', sans-serif;
+    background-color: #202b42;
+    font-size: 20px;
 }
-.full-screen{
-    display: flex;
-    height: 100vh;
-}
-
-/* LEFT SIDE */
-.left-section{
-    width: 30%;
-    margin: 3% 0;
-}
-.left-div{
-    margin: 0 auto;
-    width: 70%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.left-div-image{ /*ALTO.SKI logo*/
-    text-align: center;
-}
-.left-div-image img{
-    width: 60%;
-}
-.title{
-    text-align: center;
-}
-.title h1{
+h1{
+    text-transform: uppercase;
+    font-weight: 800;
     margin: 0;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    display: inline-block;
+    padding: 2rem 0;
 }
-.upper-title{ /* OPERATOR */
-    color: #4a90e2;
+header{
+    background-color: white;
 }
-.log-in-buttons{
-    display: flex;
-    flex-direction: column;
-    height: 10rem;
-    justify-content: space-between;
-}
-.boxes{ 
-    font-weight: bold;
-    height: 2.5rem;
-    font-size: 1.5rem;
-    padding: 0 10px;
-    background-color: #c3c3c3;
-    border-color: #b6b6b6;
-    border-style: solid;
-    font-family: 'Montserrat', sans-serif;
-
-}
-.continue-btn{
-    background-color: #4a90e2;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    transition: .3s;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-.continue-btn:hover,
-.continue-btn:focus{
-    background-color: #346aa8;
-    cursor: pointer;
-}
-/* RIGHT SIDE */
-.right-section{
-    width: 70%;
-    background-image: url(imgs/skier-right.jpg);
-    background-size: cover;
+.header-all{
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    max-width: 1745px;
 }
-.right-div{
-    width: 85%;
-    height: 90%;
-    margin: 0 auto;
+.nav-button{
+    display: none;
+}
+.links {
+height: auto;
+display: flex;
+justify-content: space-around;
+padding: 0;
+list-style: none;
+width: 50%;
+font-weight: bold;
+}
+.links a {
+font-size: 1.5rem;
+text-decoration: none;
+color: rgb(66, 135, 199);
+transition: .3s;
+}
+.links a:hover,
+.links a:focus{
+    color: #365385;
+}
+.header-nav{
+  padding: 0;
+}
+.header-nav h1{
+  font-size: 60px;
+}
+.white-line{
+    height: 2rem;
+    width: 100%;
+    background-color: white;
+}
+.button-section{
+    background-image: url(imgs/pexels-visit-almaty-848618trim.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.button-div{
+    display: flex;
+}
+.operator-image{
+    width: 40%
+}
+.operator-image img{
+width: 100%;
+vertical-align: middle;
+transform: translateX(-20px);
+object-fit: cover;
+max-width: 761px;
+}
+.button-text{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     color: white;
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: space-evenly;
 }
-.bottom-line{
-    height: 3px;
+.button-text h1{
+    padding-top: 0;
+    font-size: 2.5rem;
+}
+.staff-button{
+    width: 40%;
+    padding: 1rem;
+    margin: 0 auto;
     background-color: white;
-    width: 70%;
-}
-.right-div-text{ /* BACK & ABOUT US */
+    color: #202b42;
+    border: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
     transition: .3s;
-    display: inline-block;
+    border-radius: 5px;
 }
-.right-div-text:hover,
-.right-div-text:focus{
-    color: #4a90e2;
+.staff-button:hover,
+.staff-button:focus{
+    background-color: #202b42;
+    color: white;
     cursor: pointer;
 }
-@media (max-width:1281px) {
-    .title h1{
-        margin: 0;
-        text-align: center;
-        font-size: 2.3rem;
-    }
+.about-us-section{
+    background: linear-gradient(rgba(32, 43, 66, 0), rgb(32, 43, 66)), url(imgs/pexels-pixabay-371649reverse.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-@media(max-width:1025px) {
-    .right-section{
-        display: none;
-    }
-    .left-section{
-        width: 80%;
-        margin: 0 auto;
-    }
-    .left-div{
-        height: 70%;
-    }
-    .title h1{
-        margin: 0;
-        text-align: center;
-        font-size: 4.8rem;
-    }
-    .log-in-buttons{
-        height: 15rem;
-    }
-    .boxes{ 
-        height: 4rem;
-        font-size: 2.5rem;
-    }
+.about-us{
+    color: white;
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 7rem 0;
+    max-width: 1141px;
 }
-@media(max-width:801px) {
-    .title h1{
-        margin: 0;
-        text-align: center;
-        font-size: 3.5rem;
-    }
-    .log-in-buttons{
-        height: 12rem;
-    }
-    .boxes{ 
-        height: 3.5rem;
-        font-size: 2rem;
-    }
+.about-us h1{
+    font-size: 2.5rem;
 }
-@media(max-width:600px) {
-    .title h1{
-        margin: 0;
-        text-align: center;
-        font-size: 2.7rem;
-    }
-    .log-in-buttons{
-        height: 12rem;
-    }
-    .boxes{ 
-        height: 3.5rem;
-        font-size: 2rem;
-    }
+.about-us-text{
+    width: 60%;
+    font-size: 1.5rem;
 }
-@media(max-width:480px) {
+.about-us-image{
+    width: 30%;
+}
+.about-us-image img{
+    width: 100%;
+    max-width: 280px;
+    height: 100%;
+    object-fit: cover;
+}
+footer{
+    box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.274);
 
 }
+.footer-line{
+    width: 30%;
+    height: 3px;
+    background-color: white;
+    margin: 0 auto;
+}
+.social-div-flex{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-weight: 200;
+    font-size: 1rem;
+    color: white;
+    align-items: center;
+    padding: 7rem 0;
+}
+.social-div-left{
+    display: flex;
+    flex-direction: column;
+}
+.social-div-left a{
+    color: white;
+    text-decoration: none;
+    padding-bottom: 1rem;
+}
+.social-div-left a:hover,
+.social-div-left a:focus{
+    text-decoration: underline;
+}
+.social-div-icons i{
+    font-size: 1.5rem;
+    padding-right: .5rem;
+}
+.social-div-icons i:focus,
+.social-div-icons i:hover{
+    color: #365385;
+    cursor: pointer;
+}
+.social-div-apps img{
+    height: 3rem;
+    transition: .3s;
+}
+.social-div-apps img:hover,
+.social-div-apps img:focus{
+    transform: scale(0.95, 0.95);
+    cursor: pointer;
+}
+.social-div-right{
+    text-align: right;
+}
+
+
+@media (max-width:1281px) { 
+    .links a {
+        font-size: 1.3rem;
+    }
+    .button-text h1{
+        padding-top: 0;
+        font-size: 2rem;
+    }
+    .staff-button{
+
+        padding: .8rem;
+        font-size: 1.3rem;
+    }
+}
+@media (max-width:1025px) { 
+    .nav-button{
+    display: flex;
+    transition: .3s;
+    background-color: transparent;
+    border: 0;
+    font-size: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    color: rgb(66, 135, 199)
+    }
+    .header-nav{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .links{
+        height: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0;
+        transition: all .3s ease-out;
+    }
+    .links a{
+        font-size: 1.5rem;
+    }
+    .header-all{
+        display: flex;
+        flex-direction: column;
+    }
+    .show-links{
+        height: 23rem;
+        margin-top: 2rem;
+    }
+    .button-div{
+
+        padding: 3rem 0;
+    }
+    .button-text h1{
+        font-size: 3rem;
+    }
+    .staff-button{
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+    .operator-image{
+        display: none;
+    }
+    .about-us-text{
+        width: 100%;
+    }
+    .about-us-image{
+        display: none;
+    }
+    .social-div-flex{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.5rem;
+        height: 70vh;
+    }
+    .social-div-left a{
+        padding-bottom: 2rem;
+    }
+    .social-div-right p{
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .social-div-apps{
+        padding-bottom: 1rem;
+    }
+    .social-div-icons i{
+        padding: 4rem 1rem;
+        font-size: 4rem;
+    }
+}
+@media (max-width:641px)  { 
+    .button-text h1{
+        font-size: 2rem;
+    }
+    .social-div-icons i{
+        padding: 4rem 1rem;
+        font-size: 3rem;
+    }
+}
+@media (max-width:481px)  { 
+    body{
+        background-color: red;
+    }
+    }
